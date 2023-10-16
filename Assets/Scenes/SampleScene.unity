@@ -33126,14 +33126,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrightMapsDir:
-  - {fileID: 2800000, guid: 1d0b484b4ca3e21409d5367257424903, type: 3}
+  - {fileID: 2800000, guid: e0d3f6aa4695f7b40aa5a82b62568410, type: 3}
   BrightMapsColor:
-  - {fileID: 2800000, guid: 3f470d9da714f144e99f8d535cafc397, type: 3}
+  - {fileID: 2800000, guid: f90393d4fa06f894584fb75947181ec6, type: 3}
   DarkMapsDir:
-  - {fileID: 2800000, guid: bb9fb2a1e4f386b4db8499790a7a26ed, type: 3}
+  - {fileID: 2800000, guid: 5daf497942dc9c04eba227d75c232de0, type: 3}
   DarkMapsColor:
-  - {fileID: 2800000, guid: a40340377a267ad4c81fa6652cb06bc3, type: 3}
-  PointLight: {fileID: 1968041271}
+  - {fileID: 2800000, guid: a7587e8d911dda94e8dcd775dd28e68d, type: 3}
+  Lights:
+  - {fileID: 1968041271}
+  - {fileID: 1674786220}
   BlickTime: {x: 0.1, y: 0.3}
 --- !u!4 &1522014042
 Transform:
@@ -35387,6 +35389,100 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1674786219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674786221}
+  - component: {fileID: 1674786220}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1674786220
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674786219}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 4
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1674786221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674786219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 22.743515, y: 5.36, z: 35.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!43 &1688393707
 Mesh:
   m_ObjectHideFlags: 0
@@ -43787,8 +43883,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 20.84
+  m_Intensity: 2
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -47751,5 +47847,6 @@ SceneRoots:
   - {fileID: 2095419668}
   - {fileID: 1948838638}
   - {fileID: 1968041272}
+  - {fileID: 1674786221}
   - {fileID: 598912509}
   - {fileID: 1522014042}

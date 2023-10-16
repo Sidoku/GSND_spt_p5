@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class TestBakeLight : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class TestBakeLight : MonoBehaviour
 
     public LightmapData[] BrightLightMaps;
     public LightmapData[] DarkLightMaps;
-    public Light PointLight;
+    public Light[] Lights;
     public Vector2 BlickTime;
 
     private void Start()
@@ -53,17 +54,21 @@ public class TestBakeLight : MonoBehaviour
     {
         while(true)
         {
-            if (PointLight.enabled)
+            foreach (var light in Lights)
             {
-                PointLight.enabled = false;
-                LightmapSettings.lightmaps = DarkLightMaps;
+                if (light.enabled)
+                {
+                    light.enabled = false;
+                    LightmapSettings.lightmaps = DarkLightMaps;
 
+                }
+                else
+                {
+                    light.enabled = true;
+                    LightmapSettings.lightmaps = BrightLightMaps;
+                }
             }
-            else
-            {
-                PointLight.enabled = true;
-                LightmapSettings.lightmaps = BrightLightMaps;
-            }
+
             yield return new WaitForSeconds(Random.Range(BlickTime.x, BlickTime.y));
         }    
     }
