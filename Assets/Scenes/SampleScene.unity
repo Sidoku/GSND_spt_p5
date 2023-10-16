@@ -33134,6 +33134,7 @@ MonoBehaviour:
   DarkMapsColor:
   - {fileID: 2800000, guid: a40340377a267ad4c81fa6652cb06bc3, type: 3}
   PointLight: {fileID: 1968041271}
+  BlickTime: {x: 0.1, y: 0.3}
 --- !u!4 &1522014042
 Transform:
   m_ObjectHideFlags: 0
