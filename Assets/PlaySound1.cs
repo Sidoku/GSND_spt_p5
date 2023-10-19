@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class PlaySound1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Collider BoxCollider;
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        BoxCollider.enabled = false;
     }
 
     void PlayFallSound()
     {
+        BoxCollider.enabled = true;
         this.GetComponent<AudioSource>().Play();
     }
 }
