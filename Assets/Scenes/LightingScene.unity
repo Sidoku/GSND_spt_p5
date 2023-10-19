@@ -9743,15 +9743,25 @@ MonoBehaviour:
   Input: {fileID: 1574899369}
   StartDialogs:
   - name: Bob
-    sentence: Hello
-    audioClip: {fileID: 0}
-  - name: Chris
-    sentence: What's your problem?
-    audioClip: {fileID: 0}
+    sentence: 'Hello? Oh, hey there! '
+    audioClip: {fileID: 8300000, guid: e645bfe8692b7fe4d9a53c7922bdadea, type: 3}
+  - name: Bob
+    sentence: "Nah, I\u2019m still at the warehouse, wrapping things up."
+    audioClip: {fileID: 8300000, guid: e90ee1236ae1eab428bacc9c6b20ee2d, type: 3}
+  - name: Bob
+    sentence: Just one last round of checks before I head home.
+    audioClip: {fileID: 8300000, guid: 360186189729a0e448dea1cba5734a34, type: 3}
+  - name: Bob
+    sentence: "Yeah, it's all locked up tight here, only the exit door\u2019s available."
+    audioClip: {fileID: 8300000, guid: 61a32a53e35ba894b90e64cdc0c6c770, type: 3}
   TurnOffElecDialogs:
   - name: Bob
-    sentence: Are you still here?
-    audioClip: {fileID: 0}
+    sentence: "Wait, hold on a sec, something\u2019s off. The lights just went out,
+      and\u2014"
+    audioClip: {fileID: 8300000, guid: 1d1fabed58f5ce74eb04274a92c881ba, type: 3}
+  - name: Bob
+    sentence: Hello? Can you hear me?Hello?!
+    audioClip: {fileID: 8300000, guid: 6f1243bebbc617b4b9f7818ca4d48462, type: 3}
   Director: {fileID: 950048908}
 --- !u!4 &950048910
 Transform:
@@ -10995,19 +11005,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7021305
+      value: -0.2954718
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.030634403
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.71204835
+      value: -0.9497691
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.098471664
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
