@@ -18783,6 +18783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929986817}
   - component: {fileID: 1929986816}
+  - component: {fileID: 1929986818}
   m_Layer: 0
   m_Name: ======System======
   m_TagString: Untagged
@@ -18805,6 +18806,7 @@ MonoBehaviour:
   Input: {fileID: 1902475362}
   JumpScareVolume: {fileID: 795036573}
   ScareClip: {fileID: 8300000, guid: ae7ef1e8aaf0e0b4a9fc71f6de6de169, type: 3}
+  LightmapComp: {fileID: 1929986818}
 --- !u!4 &1929986817
 Transform:
   m_ObjectHideFlags: 0
@@ -18821,6 +18823,89 @@ Transform:
   - {fileID: 916484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1929986818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929986815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33537492340e3b241a9ab9ea27244ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BrightMapsDir:
+  - {fileID: 2800000, guid: b336c66757c61c646ba334317b744043, type: 3}
+  - {fileID: 2800000, guid: 3fab1dbaba6025e45b94ffc7fb7e8f5a, type: 3}
+  - {fileID: 2800000, guid: c48b9d1ec06739d40aebf1cf175bfec6, type: 3}
+  - {fileID: 2800000, guid: 842e0fd4e2939784eae282d8479a7947, type: 3}
+  - {fileID: 2800000, guid: fb4e83ef862626249ba1c51340412264, type: 3}
+  - {fileID: 2800000, guid: 1e44093c92ba7274a8e39d2552d8602a, type: 3}
+  - {fileID: 2800000, guid: c27c3ede07ac1fb4da828fa93f640a31, type: 3}
+  - {fileID: 2800000, guid: dee21b41b43ebe94d8f5232fc961b8bf, type: 3}
+  - {fileID: 2800000, guid: cfb360f60e1298247a38ce14b65b4957, type: 3}
+  - {fileID: 2800000, guid: 41311348495130d4b863844d676c9df5, type: 3}
+  - {fileID: 2800000, guid: 4d376ae51246337429be94ea020c8918, type: 3}
+  - {fileID: 2800000, guid: 1010ed5bb0c8c9a41b34a167821c6633, type: 3}
+  - {fileID: 2800000, guid: dcbbd88c9344a2d44b377f8fa973aecf, type: 3}
+  - {fileID: 2800000, guid: cfb88502c05015a42b01940e440c660e, type: 3}
+  - {fileID: 2800000, guid: 8dc563f6e0d3a824bb020424ff209880, type: 3}
+  - {fileID: 2800000, guid: 548757baff6b45f459cc76650864e778, type: 3}
+  BrightMapsColor:
+  - {fileID: 2800000, guid: 8d958238d918fdc43bba4eddbfc1b239, type: 3}
+  - {fileID: 2800000, guid: cf94221fd080aa042842b648eaa84791, type: 3}
+  - {fileID: 2800000, guid: 4b1dc77ffd683dc4dbb13ae5b08a00b4, type: 3}
+  - {fileID: 2800000, guid: 012e5fa097738f74491342a0e6aeb57c, type: 3}
+  - {fileID: 2800000, guid: b5f3074411a0a8842ad19997d5bd3869, type: 3}
+  - {fileID: 2800000, guid: b64c270b2c046da4aae618c3a74b01bd, type: 3}
+  - {fileID: 2800000, guid: 0bf65511a12d5bd46917b9da3a473c2f, type: 3}
+  - {fileID: 2800000, guid: b9549f79565d37446961d5d888dbf481, type: 3}
+  - {fileID: 2800000, guid: 96835a1f4aa78c74688bcba553c6349f, type: 3}
+  - {fileID: 2800000, guid: e6a8922470bd4964ca316380bda41d3c, type: 3}
+  - {fileID: 2800000, guid: 579c76159d5d82645abb0b651e762ce2, type: 3}
+  - {fileID: 2800000, guid: fef41a82e41c1f2499a0a74d390a4ef7, type: 3}
+  - {fileID: 2800000, guid: a63ff489fc183ec4a863724591cf8416, type: 3}
+  - {fileID: 2800000, guid: a46af8a8197cc7f4180cff1b15359910, type: 3}
+  - {fileID: 2800000, guid: 5e4392a3694e2e44fbda977772105542, type: 3}
+  - {fileID: 2800000, guid: edf15d318c96a704c91866bd52f45b5b, type: 3}
+  DarkMapsDir:
+  - {fileID: 2800000, guid: 916f316d4cf7afa498d9a80d6f95f568, type: 3}
+  - {fileID: 2800000, guid: 9dd545fb63d79324a9f5a19398db5bf2, type: 3}
+  - {fileID: 2800000, guid: e9ce2230b6003344e9fd2d15e929a0e5, type: 3}
+  - {fileID: 2800000, guid: f2c7b5ca353dcf44b82ecfb9a4a4f3b6, type: 3}
+  - {fileID: 2800000, guid: 3f197a361b1a1c64dbd8c2ea0767720b, type: 3}
+  - {fileID: 2800000, guid: 2e41c107f294aa84ea54c6ff4deb0836, type: 3}
+  - {fileID: 2800000, guid: 108cef8069256dc468ba6f27b2ac287a, type: 3}
+  - {fileID: 2800000, guid: 8f575ab31c19859439d346013e77e0fe, type: 3}
+  - {fileID: 2800000, guid: d03ffa7838dd4464fb203cea9c94948d, type: 3}
+  - {fileID: 2800000, guid: ab557768c69c1b7429c41467b8c5c6f6, type: 3}
+  - {fileID: 2800000, guid: e8c93edc65b7d814c9414cfcff68ac66, type: 3}
+  - {fileID: 2800000, guid: 773ae2f57f41695468b079f5d53f2a88, type: 3}
+  - {fileID: 2800000, guid: 0e5ec6c101933b64d93f6073f83cffcd, type: 3}
+  - {fileID: 2800000, guid: cec0d98d06854114f9e776843cfae6c3, type: 3}
+  - {fileID: 2800000, guid: c464eebfd6c0007418219cf550760f02, type: 3}
+  - {fileID: 2800000, guid: 6247312d50a11f54693e50b8738e60ba, type: 3}
+  DarkMapsColor:
+  - {fileID: 2800000, guid: df3ebf923ec16e141842a1e5caa9dbdc, type: 3}
+  - {fileID: 2800000, guid: 1318afad9cd046a4a83d55ce35d7a2a0, type: 3}
+  - {fileID: 2800000, guid: f76e74c457fd52640947ace8f63bd96e, type: 3}
+  - {fileID: 2800000, guid: 249e1bb7828e28b419a456cf588f0890, type: 3}
+  - {fileID: 2800000, guid: 13597420c060f0841992eddf168ff058, type: 3}
+  - {fileID: 2800000, guid: f79b9b6a6ccd30e4a8796bd7852dada5, type: 3}
+  - {fileID: 2800000, guid: b703f014a99317c4d9464f55e9fc735f, type: 3}
+  - {fileID: 2800000, guid: 34058f1cde9eedd4db75ab4814563a6e, type: 3}
+  - {fileID: 2800000, guid: 13569bc5e1520704a919de0981539a84, type: 3}
+  - {fileID: 2800000, guid: 666e7d406ed55424ab7f3676bf96e34d, type: 3}
+  - {fileID: 2800000, guid: 79aa13a3790271844b51704e4b3ac60e, type: 3}
+  - {fileID: 2800000, guid: e32a7dab81446e340bc57626407b0d81, type: 3}
+  - {fileID: 2800000, guid: e5f7e360a55faf041940559f6d446c29, type: 3}
+  - {fileID: 2800000, guid: fdac52ed51ba36a49ba5abf9a2689470, type: 3}
+  - {fileID: 2800000, guid: 303de3860e3dec040b4403ec7a6109ec, type: 3}
+  - {fileID: 2800000, guid: 9c42bb08c7464fd48a1cb341e6e0effd, type: 3}
+  Lights:
+  - {fileID: 384041567}
+  BlickTime: {x: 0.3, y: 0.6}
 --- !u!1001 &1936445052
 PrefabInstance:
   m_ObjectHideFlags: 0

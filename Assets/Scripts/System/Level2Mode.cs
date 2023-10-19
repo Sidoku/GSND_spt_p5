@@ -11,6 +11,12 @@ public class Level2Mode : MonoBehaviour
     public PlayerInput Input;
     public Volume JumpScareVolume;
     public AudioClip ScareClip;
+    public TestBakeLight LightmapComp;
+
+    private void Start()
+    {
+        TestBlickLight();
+    }
 
     public void PlayJumpScare()
     {
@@ -25,5 +31,10 @@ public class Level2Mode : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         GameManager.Instance.QuitGame();
+    }
+
+    public void TestBlickLight()
+    {
+        LightmapComp.BlickLight();
     }
 }

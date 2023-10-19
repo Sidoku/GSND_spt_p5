@@ -17,10 +17,12 @@ public class Level1Mode : LevelSingleton<Level1Mode>
 
     private void Start()
     {
-        UIMgr.Instance.EnterMovieMode();
         Director.stopped -= OnDirectorStopp;
         Director.stopped += OnDirectorStopp;
         Input.enabled = false;
+
+        if(UIMgr.IsValid)
+            UIMgr.Instance.EnterMovieMode();
     }
 
     private void OnDirectorStopp(PlayableDirector dir)

@@ -15,6 +15,10 @@ public class TestBakeLight : MonoBehaviour
     public Light[] Lights;
     public Vector2 BlickTime;
 
+    public MeshRenderer LightRenderer;
+    public Material BrightMat;
+    public Material DarkMat;
+
     private bool IsBlicking;
 
     private void Start()
@@ -51,6 +55,7 @@ public class TestBakeLight : MonoBehaviour
         {
             light.enabled = true;
         }
+        LightRenderer.materials[1] = BrightMat;
         LightmapSettings.lightmaps = BrightLightMaps;
     }
 
@@ -61,6 +66,7 @@ public class TestBakeLight : MonoBehaviour
         {
             light.enabled = false;
         }
+        LightRenderer.materials[1] = DarkMat;
         LightmapSettings.lightmaps = DarkLightMaps;
     }
 
@@ -86,12 +92,14 @@ public class TestBakeLight : MonoBehaviour
                 if (light.enabled)
                 {
                     light.enabled = false;
+                    LightRenderer.sharedMaterials[1] = BrightMat;
                     LightmapSettings.lightmaps = DarkLightMaps;
 
                 }
                 else
                 {
                     light.enabled = true;
+                    LightRenderer.sharedMaterials[1] = DarkMat;
                     LightmapSettings.lightmaps = BrightLightMaps;
                 }
             }
