@@ -21323,6 +21323,7 @@ MonoBehaviour:
   MovieBG: {fileID: 0}
   CenterPoint: {fileID: 0}
   DialogC: {fileID: 0}
+  ScareImgObj: {fileID: 0}
 --- !u!114 &1937576918
 MonoBehaviour:
   m_ObjectHideFlags: 0
