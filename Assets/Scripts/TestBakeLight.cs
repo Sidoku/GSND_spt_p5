@@ -15,6 +15,8 @@ public class TestBakeLight : MonoBehaviour
     public Light[] Lights;
     public Vector2 BlickTime;
 
+    private bool IsBlicking;
+
     private void Start()
     {
         List<LightmapData> dlightMap = new List<LightmapData>();
@@ -40,19 +42,44 @@ public class TestBakeLight : MonoBehaviour
         }
 
         BrightLightMaps = blightMap.ToArray();
-
-        SwitchLight();
     }
 
-    [ContextMenu("≤‚ ‘")]
-    public void SwitchLight()
+    [ContextMenu("Turn On Light")]
+    public void TurnOnLights()
     {
+        foreach (var light in Lights)
+        {
+            light.enabled = true;
+        }
+        LightmapSettings.lightmaps = BrightLightMaps;
+    }
+
+    [ContextMenu("Turn Off Light")]
+    public void  TurnOffLights()
+    {
+        foreach (var light in Lights)
+        {
+            light.enabled = false;
+        }
+        LightmapSettings.lightmaps = DarkLightMaps;
+    }
+
+    [ContextMenu("Blick Light")]
+    public void BlickLight()
+    {
+        IsBlicking= true;
         StartCoroutine(LightCou());
+    }
+
+    [ContextMenu("Stop Blick Light")]
+    public void StopBlickLight()
+    {
+        IsBlicking = false;
     }
 
     private IEnumerator LightCou()
     {
-        while(true)
+        while(IsBlicking)
         {
             foreach (var light in Lights)
             {
