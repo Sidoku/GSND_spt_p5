@@ -47,8 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenuBGM: {fileID: 0}
-  SE_Left: {fileID: 0}
-  SE_Right: {fileID: 0}
+  SE_TurnOffElectric: {fileID: 8300000, guid: fbc173d1a9cbdd34aba1fef479606037, type: 3}
   LoopBGM: []
   BGMSource: {fileID: 8035148933779900819}
   SESource_2D: {fileID: 8035148933779900816}

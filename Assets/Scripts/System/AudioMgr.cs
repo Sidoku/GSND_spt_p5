@@ -7,8 +7,7 @@ public class AudioMgr : Singleton<AudioMgr>
 {
     [Header("BGM")]
     public AudioClip MainMenuBGM;
-    public AudioClip SE_Left;
-    public AudioClip SE_Right;
+    public AudioClip SE_TurnOffElectric;
     public AudioClip[] LoopBGM;
 
     [Header("Source")]
