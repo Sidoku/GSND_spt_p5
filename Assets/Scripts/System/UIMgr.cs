@@ -12,6 +12,7 @@ public class UIMgr : Singleton<UIMgr>
     public UI_MovieBG MovieBG;
     public UI_CenterPoint CenterPoint;
     public DialogueController DialogC;
+    public GameObject ScareImgObj;
 
     private void Start()
     {
